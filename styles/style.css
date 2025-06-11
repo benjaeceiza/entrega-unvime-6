@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* ---- HEADER ----- */
+
+.header {
+    padding: 10px 50px;
+    border-bottom: 1px solid black;
+
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    width: 200px;
+}
+
+
+
+.header__input {
+    height: 30px;
+    border-radius: 12px;
+    border: gray 1px solid;
+    padding: 0px 10px;
+    width: 60%;
+    max-width: 1000px;
+    background-image: url("../assets/icons/lupa.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 99%;
+}
+
+.header__icon {
+    height: 30px;
+}
+
+.header__icon:hover {
+    cursor: pointer;
+}
+
+.cart-user-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.cart-icon-container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+.cart-icon {
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 6px;
+}
+
+.cart-number {
+    background-color: red;
+    color: white;
+    width: 15px;
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.icon-user-container {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.user-name {
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* ---- MAIN ---- */
+
+.contenedor {
+    width: 70%;
+    margin: auto;
+}
+
+
+/* SECTION DE CATEGORIAS Y PROMOCIONES */
+
+.section-categories {
+    padding-bottom: 20px;
+    background: linear-gradient(180deg, white, white, #0cb094, #0cb094);
+}
+
+
+
+/* LISTA DE CATEGORIAS */
+
+
+.categories__list {
+    background-color: #333333;
+    min-width: 400px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    border-radius: 10px;
+
+}
+
+.categories__link {
+    text-decoration: none;
+
+}
+
+
+.categories__conteiner {
+    text-align: center;
+    width: 100px;
+}
+
+.categories__name {
+    color: white;
+    font-size: 15px;
+
+}
+
+/*  PROMOCIONES */
+
+.promociones {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+.promocion-container-1 {
+    width: 45%;
+    height: 300px;
+    background-image: url("../assets/fondo-aricle-disney.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 3px black;
+    min-width: 250px;
+
+}
+
+.promocion-container-2 {
+    width: 45%;
+    height: 300px;
+    background-image: url("../assets/fondo-article-max.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 3px black;
+    min-width: 250px;
+}
+
+/* CARD-PRODUCTS */
+
+.section-interesar {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.subtitle {
+    padding: 25px 0px 10px 0px;
+    font-weight: bold;
+
+}
+
+
+.product-conteiner {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    width: 20%;
+    box-shadow: 0px 2px 5px 5px rgb(68, 68, 68);
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 10px;
+    max-width: 300px;
+    min-width: 250px;
+    margin-top: 20px;
+}
+
+.card-img {
+    width: 99%;
+    border-radius: 20px;
+    height: 240px;
+
+}
+
+.name-price-container {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.product-name {
+    font-size: small;
+    font-weight: bold;
+    width: 60%;
+}
+
+.product-price-container {
+    border-left: 1px solid gray;
+    width: 40%;
+}
+
+.product-price {
+    font-size: small;
+    font-weight: bold;
+
+}
+
+.puntos {
+    color: rgb(177, 177, 177);
+    font-size: small;
+    font-weight: bold;
+}
+
+
+
+
+/* QUERYS */
+
+@media(max-width:580px) {
+
+    /* PRODUCTOS */
+
+    .product-conteiner {
+        justify-content: center;
+
+    }
+
+    .card-container {
+        display: flex;
+        max-width: none;
+        align-items: flex-start;
+   
+        width: 90%;
+        min-width: 300px;
+    }
+
+    .card-img {
+        width: 30%;
+        min-width: 150px;
+    }
+
+    .name-price-container {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+       
+    }
+
+    .product-price-container {
+        border: 0;
+    }
+    /* PROMOCIONES */
+
+    .promociones{
+        justify-content: center;
+    }
+}
