@@ -13,7 +13,8 @@
     <header class="header">
         <!-- NAV -->
         <nav class="header__nav">
-            <a href="./index.html"><img class="header__logo" src="./assets/logo.png" alt="Logo"></a>
+            <a href="./index.html" class="logo-link"><img class="header__logo" src="./assets/logo.png" alt="Logo"></a>
+            <a href="./index.html" class="logo-link-mobile"><img  class="header__logo-mobile" src="./assets/logo-mobile.png" alt="Logo"></a>
             <input class="header__input" type="text" placeholder="Buscar productos">
             <div class="cart-user-container">
                 <div class="cart-icon-container">
@@ -23,6 +24,9 @@
                 <div class="icon-user-container">
                     <img class="user-icon" src="./assets/icons/user.png" alt="User">
                     <p class="user-name">Benjamin</p>
+                </div>
+                <div class="icon-user-container-mobile">
+                    <img class="user-icon" src="./assets/icons/user.png" alt="User">
                 </div>
             </div>
         </nav>
@@ -103,19 +107,32 @@
             <!-- PROMOCIONES -->
             <article class="promociones">
                 <div class="promocion-container-1">
-
+                    <div class="contenedor-logo-promo">
+                        <img class="logo-promocion" src="./assets/logo-disney.jpg" alt="">
+                        <div class="contenedor-promos">
+                            <p class="titulo-promo">50% OFF en Disney+</p>
+                            <p class="promo">Canjeando 60.000 Puntos</p>
+                            <p class="promo">Mi Ecommerce</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="promocion-container-2">
-
-                </div>
+                    <div class="contenedor-logo-promo">
+                        <img class="logo-promocion" src="./assets/logo-max.png" alt="">
+                        <div class="contenedor-promos">
+                            <p class="titulo-promo">50% OFF en MAX</p>
+                            <p class="promo">Canjeando 60.000 Puntos</p>
+                            <p class="promo">Mi Ecommerce</p>
+                        </div>
+                    </div>
             </article>
         </section>
         <!-- PRODUCTOS Y SERVICIOS -->
         <section class="section-interesar">
             <h2 class="subtitle">Te puede interesar</h2>
             <div class="product-conteiner">
-                <article class="card-container">
-                    <img class="card-img" src="./assets/products/blue-label.jpg" alt="Blue Label">
+               <article class="card-container">
+                    <a href="#"><img class="card-img" src="./assets/products/blue-label.jpg" alt="Blue Label"></a>
                     <div class="name-price-container">
                         <p class="product-name">Johnnie Walker Blue Label Scotch Whisky</p>
                         <div class="product-price-container">
@@ -124,8 +141,9 @@
                         </div>
                     </div>
                 </article>
+                
                 <article class="card-container">
-                    <img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio">
+                   <a href="#"><img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio"></a> 
                     <div class="name-price-container">
                         <p class="product-name">nombre productos</p>
                         <div class="product-price-container">
@@ -136,20 +154,20 @@
                     </div>
                 </article>
                 <article class="card-container">
-                    <img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio">
+                  <a href="#"><img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio"></a>  
                     <div class="name-price-container">
                         <p class="product-name">nombre productos</p>
-                         <div class="product-price-container">
+                        <div class="product-price-container">
                             <p class="product-price">xx xxx</p>
                             <p class="puntos">Puntos</p>
                         </div>
                     </div>
                 </article>
                 <article class="card-container">
-                    <img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio">
+                   <a href="#"><img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio"></a>
                     <div class="name-price-container">
                         <p class="product-name">nombre productos</p>
-                         <div class="product-price-container">
+                        <div class="product-price-container">
                             <p class="product-price">xx xxx</p>
                             <p class="puntos">Puntos</p>
                         </div>
@@ -161,17 +179,17 @@
             <h2 class="subtitle">Los más pedidos</h2>
             <div class="product-conteiner">
                 <article class="card-container">
-                    <img class="card-img" src="./assets/products/blue-label.jpg" alt="Blue Label">
+                   <a href=""><img class="card-img" src="./assets/products/pepsi.webp" alt="pepsi"></a>
                     <div class="name-price-container">
-                        <p class="product-name">Johnnie Walker Blue Label Scotch Whisky</p>
+                        <p class="product-name">Lata Pepsi cola 500Ml</p>
                         <div class="product-price-container">
-                            <p class="product-price">650.000</p>
+                            <p class="product-price">20.000</p>
                             <p class="puntos">Puntos</p>
                         </div>
                     </div>
                 </article>
                 <article class="card-container">
-                    <img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio">
+                   <a href=""><img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio"></a> 
                     <div class="name-price-container">
                         <p class="product-name">nombre productos</p>
                         <div class="product-price-container">
@@ -182,60 +200,60 @@
                     </div>
                 </article>
                 <article class="card-container">
-                    <img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio">
+                   <a href=""><img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio"></a>
                     <div class="name-price-container">
                         <p class="product-name">nombre productos</p>
-                         <div class="product-price-container">
+                        <div class="product-price-container">
                             <p class="product-price">xx xxx</p>
                             <p class="puntos">Puntos</p>
                         </div>
                     </div>
                 </article>
                 <article class="card-container">
-                    <img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio">
+                   <a href=""><img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio"></a> 
                     <div class="name-price-container">
                         <p class="product-name">nombre productos</p>
-                         <div class="product-price-container">
+                        <div class="product-price-container">
                             <p class="product-price">xx xxx</p>
                             <p class="puntos">Puntos</p>
                         </div>
                     </div>
                 </article>
                 <article class="card-container">
-                    <img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio">
+                   <a href=""><img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio"></a> 
                     <div class="name-price-container">
                         <p class="product-name">nombre productos</p>
-                         <div class="product-price-container">
+                        <div class="product-price-container">
                             <p class="product-price">xx xxx</p>
                             <p class="puntos">Puntos</p>
                         </div>
                     </div>
                 </article>
                 <article class="card-container">
-                    <img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio">
+                   <a href=""><img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio"></a> 
                     <div class="name-price-container">
                         <p class="product-name">nombre productos</p>
-                         <div class="product-price-container">
+                        <div class="product-price-container">
                             <p class="product-price">xx xxx</p>
                             <p class="puntos">Puntos</p>
                         </div>
                     </div>
                 </article>
                 <article class="card-container">
-                    <img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio">
+                    <a href=""><img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio"></a>
                     <div class="name-price-container">
                         <p class="product-name">nombre productos</p>
-                         <div class="product-price-container">
+                        <div class="product-price-container">
                             <p class="product-price">xx xxx</p>
                             <p class="puntos">Puntos</p>
                         </div>
                     </div>
                 </article>
                 <article class="card-container">
-                    <img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio">
+                    <a href=""><img class="card-img" src="./assets/products/fondo-cuadros.webp" alt="Servicio"></a>
                     <div class="name-price-container">
                         <p class="product-name">nombre productos</p>
-                         <div class="product-price-container">
+                        <div class="product-price-container">
                             <p class="product-price">xx xxx</p>
                             <p class="puntos">Puntos</p>
                         </div>
@@ -243,7 +261,75 @@
                 </article>
             </div>
         </section>
-       
+        <!-- LISTA DE CATEGORIAS -->
+        <article class="categories">
+            <ul class="categories__list">
+                <li class="categories__item">
+                    <a class="categories__link" href="#">
+                        <div class="categories__conteiner">
+                            <img class="categories__icon" src="./assets/icons/tecnologia.png" alt="Tecnologia">
+                            <p class="categories__name">Tecnologia</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a class="categories__link" href="#">
+                        <div class="categories__conteiner">
+                            <img class="categories__icon" src="./assets/icons/alimentos.png" alt="Alimentos">
+                            <p class="categories__name">Alimentos</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a class="categories__link" href="#">
+                        <div class="categories__conteiner">
+                            <img class="categories__icon" src="./assets/icons/bebidas.png" alt="Bebidas">
+                            <p class="categories__name">Bebidas</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a class="categories__link" href="">
+                        <div class="categories__conteiner">
+                            <img class="categories__icon" src="./assets/icons/indumentaria.png" alt="Indumentaria">
+                            <p class="categories__name">Indumentaria</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a class="categories__link" href="">
+                        <div class="categories__conteiner">
+                            <img class="categories__icon" src="./assets/icons/juegos.png" alt="Juegos">
+                            <p class="categories__name">Juegos</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a class="categories__link" href="">
+                        <div class="categories__conteiner">
+                            <img class="categories__icon" src="./assets/icons/automotor.png" alt="Automotor">
+                            <p class="categories__name">Automotor</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a class="categories__link" href="">
+                        <div class="categories__conteiner">
+                            <img class="categories__icon" src="./assets/icons/hogar.png" alt="Hogar">
+                            <p class="categories__name">Hogar</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a class="categories__link" href="">
+                        <div class="categories__conteiner">
+                            <img class="categories__icon" src="./assets/icons/otros.png" alt="Otros">
+                            <p class="categories__name">Otros</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </article>
     </main>
     <footer></footer>
 </body>
