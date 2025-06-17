@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>MiEcommerce - checkout</title>
+</head>
+<body>
+      <!-- HEADER -->
+    <header class="header">
+        <!-- NAV -->
+        <nav class="header__nav">
+            <a href="./index.html" class="logo-link"><img class="header__logo" src="./assets/logo.png" alt="Logo"></a>
+            <a href="./index.html" class="logo-link-mobile"><img class="header__logo-mobile"
+                    src="./assets/logo-mobile.png" alt="Logo"></a>
+            <input class="header__input" type="text" placeholder="Buscar productos">
+            <div class="cart-user-container">
+                <div class="cart-icon-container">
+                    <p class="cart-number">2</p>
+                    <a href="./cart.html"><img class="cart-icon" src="./assets/icons/cart.png" alt="Carrito"></a>
+                </div>
+                <div class="icon-user-container">
+                    <img class="user-icon" src="./assets/icons/user.png" alt="User">
+                    <p class="user-name">Benjamin</p>
+                </div>
+                <div class="icon-user-container-mobile">
+                    <img class="user-icon" src="./assets/icons/user.png" alt="User">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+      <section class="section-pay">
+        <h1 class="subtitle center">Ingrese sus datos</h1>
+        <form class="pay-form">
+         <input class="checkout-input" type="text" placeholder="Nombre">
+         <input class="checkout-input" type="text" placeholder="Apellido">
+         <input class="checkout-input" type="number" placeholder="Numero">
+         <input class="checkout-input" type="email" name="" id="" placeholder="Corre electronico">
+         <button class="pay-button">Pagar</button>
+        </form>
+      </section>
+    </main>
+     <!-- FOOTER -->
+     <footer class="footer">
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#" class="footer__link"><img class="footer__list-img" src="./assets/icons/instagram.png" alt="instagram"></a></li>
+          <li class="footer__list-item"><a href="#" class="footer__link"><img class="footer__list-img" src="./assets/icons/facebook.png" alt="facebook"></a></li>
+          <li class="footer__list-item"><a href="#" class="footer__link"><img class="footer__list-img" src="./assets/icons/youtube.png" alt="youtube"></a></li>
+          <li class="footer__list-item"><a href="#" class="footer__link"><img class="footer__list-img" src="./assets/icons/x.png" alt="x"></a></li>
+        </ul>
+        <p class="copy">&copy Derechos reservados</p>
+        <div class="download-container">
+            <div class="ios-container">
+               <img class="download-img" src="./assets/icons/ios.png" alt="ios">
+               <p>App Store</p>
+            </div>
+            <div class="android-container">
+                <img class="download-img" src="./assets/icons/play-store.png" alt="android">
+                <p>Play Store</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
